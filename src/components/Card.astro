@@ -11,7 +11,7 @@ interface Props {
     <div class="bg-white rounded-lg overflow-hidden shadow-lg dark:shadow-slate-200/50">
       <div class="p-6">
         <h2 class="text-xl font-semibold mb-4">
-          <a href={'/articles/' + arg.slug}>{arg.data.title}</a>
+          <a href={'/' + BASE + '/articles/' + arg.slug}>{arg.data.title}</a>
         </h2>
         <Tags tags={arg.data.tags}/>
       </div>

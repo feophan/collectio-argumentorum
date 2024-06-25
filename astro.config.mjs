@@ -7,5 +7,5 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
   integrations: [tailwind(), icon(), mdx()],
   site: 'https://feophan.github.io',
-  base: 'collectio-argumentorum',
+  base: '/collectio-argumentorum',
 });

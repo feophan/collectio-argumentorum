@@ -1,0 +1,23 @@
+---
+export interface Props {
+  index: number;
+  type: string;
+}
+
+const { index, type = 'pro' } = Astro.props as Props;
+---
+{
+  type == "pro" &&
+  <span class="bg-sky-200 w-8 h-8 inline-block text-center rounded-full outline outline-1 outline-slate-800 mr-4">{index}</span>
+}
+
+{
+  type == "con" &&
+  <span class="bg-red-200 w-6 h-6 inline-block text-center rounded-full outline outline-1 outline-slate-800 mr-4 text-red-800">{index}</span>
+}
+
+{
+  type == "con-con" &&
+  <span class="bg-green-200 w-6 h-6 inline-block text-center rounded-full outline outline-1 outline-slate-800 mr-4 text-green-800">{index}</span>
+}
+

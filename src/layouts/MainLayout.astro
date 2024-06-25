@@ -1,7 +1,6 @@
 ---
 import {SITE_TITLE, SITE_DESCRIPTION} from '../constants'
 import NavBar from '../components/NavBar.astro'
-const { title = 'Goldorin Corpora'} = Astro.props;
 
 interface Props {
     title?: String;
@@ -14,7 +13,7 @@ interface Props {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={SITE_DESCRIPTION} />
-    <title>{SITE_TITLE} - {title}</title>
+    <title>{SITE_TITLE}</title>
   </head>
   <body class="dark:bg-gray-900 mb-20">
     <NavBar />
